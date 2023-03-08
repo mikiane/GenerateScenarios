@@ -56,7 +56,7 @@ with open(input_file, 'r') as csv_file:
         if row1 != row2:
             # Concaténer les deux lignes avec les chaînes "Tendance 1" et "Tendance 2" et ajouter la chaîne à la liste de concaténations
             # Concaténer les deux lignes avec les chaînes "Tendance 1" et "Tendance 2" et ajouter la chaîne à la liste de concaténations
-            concat = 'Tendance 1 : \n\n' + ''.join(row1) + '\n\nTendance 2 :\n\n' + ''.join(row2) + '\n\n'
+            concat = 'Tendance 1 : ### ' + ''.join(row1) + ' ###\n\nTendance 2 : ### ' + ''.join(row2) + ' ### \n\n'
             concat_list.append(concat)
             # Appel de la fonction de traitement pour chaque concaténation et stockage des résultats dans une liste
             #print(concat)
