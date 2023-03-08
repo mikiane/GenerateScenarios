@@ -1,0 +1,11 @@
+1 Génération de scenarios
+1.1 Appeler scenariometavers.py avec tendances.txt en entrée. et récupérer les scenarios dans le fichier resultat.txt
+1.2 Transformer # en saut de ligne et - en espace. Copie resultat.txt dans input.txt
+1.3 Appeler parseandoutputtocsv.py pour transformer le fichier input.txt en un fichier output.csv avec les scenarios dans chaque ligne.
+1.4 Clean manuel vers output-preclean.csv
+1.5 Appeler cleancsv.py pour supprimer les occurence des mots scenarios dans le fichier utput-preclean.csv. Récupérer le résultat dans cleanoutput.csv
+1.6 Clean manuel
+2 Embedding : 
+2.1 copie cleanoutput.csv to inputcleanscenarios.csv. Renommer la premiere colonne en Scenarios. Supprimer toutes les autres colonnes et retirer les entetes. Exporter en csv. stocker dans /Users/michel/tmp/
+2.2 appeler embeddings.py. le fichier embeddings resultatnt est /Users/michel/tmp/outputscenariosembeddings.csv
+2.3 appeler clusterize.py. (on peut modifier le nombre de cluster généré dans le code du script (n_clusters = 10 par défaut). Le texte des scenarios clusturisés s'affiche à l'ecran.
